@@ -1,0 +1,97 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bulma CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
+    />
+
+     <!-- font awesome cdn -->
+     <script
+     src="https://kit.fontawesome.com/8a80b728dc.js"
+     crossorigin="anonymous"
+   ></script>
+    <title>Firestore Query Activity</title>
+</head>
+<body>
+    <div class="has-background-lightgray p-4 m-3 has-background-grey-lighter">
+        <h1 class="title">Firestore Query Activity</h1>
+        <div id="output1">
+          <h2 class="subtitle">#1</h2>
+        </div>
+        <br>
+        <div id="output2">
+          <h2 class="subtitle">#2</h2>
+        </div>
+        <br>
+        <div id="output3">
+          <h2 class="subtitle">#3</h2>
+        </div>
+        <br>
+        <div id="output4">
+          <h2 class="subtitle">#4</h2>
+        </div>
+        <br>
+        <div id="output5">
+          <h2 class="subtitle">#5</h2>
+        </div>
+        <br>
+        <div id="output6">
+          <h2 class="subtitle">#6</h2>
+        </div>
+        <br>
+        <div id="output7">
+          <h2 class="subtitle">#7</h2>
+        </div>
+        <br>
+        <div id="output8">
+          <h2 class="subtitle">#8</h2>
+        </div>
+        <br>
+        <div id="output9">
+          <h2 class="subtitle">#9</h2>
+        </div>
+      </div>
+  
+      <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
+  
+      <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+      <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+  
+      <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+      <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-analytics.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-storage.js"></script>
+  
+      <!-- Add Firebase products that you want to use -->
+      <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-auth.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-firestore.js"></script>
+  
+      <script>
+        // TODO
+        // Copy **only** your firebaseConfig from Google Firebae and add it below
+  
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+    apiKey: "AIzaSyCn6tnZddGd0gKzlrxWiFrmCpSMwizUI08",
+      authDomain: "my-is424-fainal.firebaseapp.com",
+      projectId: "my-is424-fainal",
+      storageBucket: "my-is424-fainal.appspot.com",
+      messagingSenderId: "1022311016661",
+      appId: "1:1022311016661:web:e1dab7fb77ac42c9ea9a5c"
+    };
+  
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        // define authentication variable
+        let auth = firebase.auth();
+        let db = firebase.firestore();
+  
+        // define a storage reference
+        let ref = firebase.storage().ref();
+      </script>
+      <!-- make sure to add your own js file as the last line in index.html file -->
+      <script src="app.js"></script>
+</body>
+</html>
